@@ -1,0 +1,18 @@
+using System;									
+using GXPEngine;                               
+using System.Drawing;							
+
+public class MyGame : Game
+{	
+	public MyGame() : base(1280 ,720, false)		
+	{
+		Level level = new Level();	
+		AddChild(level);
+	}
+	void Update(){}
+
+	static void Main()							
+	{
+		new MyGame().Start();				
+	}
+}
